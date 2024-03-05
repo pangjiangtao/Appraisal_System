@@ -45,39 +45,39 @@ INSERT INTO Users(UserName,Sex,Password,BaseTypeId,IsDel) VALUES('test3','男','
 INSERT INTO Users(UserName,Sex,Password,BaseTypeId,IsDel) VALUES('test4','男','111','1','False')
 
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','1','12','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','1','12','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','2','2','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','2','2','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','3','12','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','3','12','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','4','158','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','4','158','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','5','36','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','5','36','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','6','3','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('1','6','3','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','1','3','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','1','3','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','2','3','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','2','3','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','3','6','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','3','6','2023','False')
 
 INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','4','0','2018','False')
 
 INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','5','116','2018','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','6','0','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('3','6','0','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','1','12','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','1','12','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','2','12','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','2','12','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','3','2','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','3','2','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','4','2','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','4','2','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','5','2','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','5','2','2023','False')
 
-INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','6','12','2018','False')
+INSERT INTO UserAppraisals(UserId,CoefficientId,Count,AssessmentYear,IsDel) VALUES('5','6','12','2023','False')
 

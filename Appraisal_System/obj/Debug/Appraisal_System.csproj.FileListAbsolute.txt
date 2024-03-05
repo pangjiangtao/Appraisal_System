@@ -37,3 +37,4 @@ E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.csproj.CoreCompi
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.csproj.CopyComplete
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.exe
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.pdb
+E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmUserAppraisal.resources

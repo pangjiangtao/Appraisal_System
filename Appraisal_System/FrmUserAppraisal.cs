@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Appraisal_System.Models;
 
@@ -20,6 +14,12 @@ namespace Appraisal_System
 
         private void FrmUserAppraisal_Load(object sender, EventArgs e)
         {
+            SetCol();
+            
+        }
+
+        private void SetCol()
+        {
             List<AppraisalCoefficients> appraisalCoefficients = AppraisalCoefficients.ListAll();
             List<DataGridViewTextBoxColumn> dataGridViewTextBoxColumns = new List<DataGridViewTextBoxColumn>();
 
@@ -27,30 +27,48 @@ namespace Appraisal_System
             {
                 dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
                 {
-                    HeaderText = "AppraisalType"+ appraisalCoefficient.Id.ToString(),
-                    Name =appraisalCoefficient.AppraisalType,
+                    HeaderText = appraisalCoefficient.AppraisalType,
+                    Name = "AppraisalType" + appraisalCoefficient.Id.ToString(),
                     DataPropertyName = "AppraisalType" + appraisalCoefficient.Id.ToString(),
-                    ReadOnly =true,
+                    ReadOnly = true,
                     Width = 88
                 });
                 dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
                 {
                     HeaderText = "系数",
-                    Name = "AppraisalCoefficient"+ appraisalCoefficient.Id.ToString(),
+                    Name = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
                     DataPropertyName = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
-                    ReadOnly =true,
+                    ReadOnly = true,
+                    Visible = false,
                     Width = 88
                 });
                 dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
                 {
                     HeaderText = "计算方式",
-                    Name = "CalculationMethod" +appraisalCoefficient.Id.ToString(),
+                    Name = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
                     DataPropertyName = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
                     ReadOnly = true,
+                    Visible = false,
                     Width = 88
-                }) ;
+                });
             }
             dgvUserAppraisal.Columns.AddRange(dataGridViewTextBoxColumns.ToArray());
+            dgvUserAppraisal.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "考核年度",
+                Name = "AssessmentYear",
+                DataPropertyName = "AssessmentYear",
+                ReadOnly = true,
+                Width = 166
+            });
+            dgvUserAppraisal.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                HeaderText = "实发年终奖",
+                Name = "YearBonus",
+                DataPropertyName = "AssessmentYear",
+                ReadOnly = true,
+                Width = 166
+            });
         }
     }
 }

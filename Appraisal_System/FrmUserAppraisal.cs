@@ -49,41 +49,47 @@ namespace Appraisal_System
 
         }
 
-        private void SetCol()
-        {
-            List<AppraisalCoefficients> appraisalCoefficients = AppraisalCoefficients.ListAll();
-            List<DataGridViewTextBoxColumn> dataGridViewTextBoxColumns = new
-            List<DataGridViewTextBoxColumn>();
-
-            foreach (var appraisalCoefficient in appraisalCoefficients)
+     
+            private void SetCol()
             {
-                dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
+                List<AppraisalCoefficients> appraisalCoefficients = AppraisalCoefficients.ListAll();
+
+                foreach (var appraisalCoefficient in appraisalCoefficients)
                 {
-                    HeaderText = appraisalCoefficient.AppraisalType,
-                    Name = "AppraisalType" + appraisalCoefficient.Id.ToString(),
-                    DataPropertyName = "AppraisalType" + appraisalCoefficient.Id.ToString(),
-                    ReadOnly = true,
-                    Width = 88
-                });
-                dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
-                {
-                    HeaderText = "系数",
-                    Name = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
-                    DataPropertyName = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
-                    ReadOnly = true,
-                    Visible = false,
-                    Width = 88
-                });
-                dataGridViewTextBoxColumns.Add(new DataGridViewTextBoxColumn
-                {
-                    HeaderText = "计算方式",
-                    Name = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
-                    DataPropertyName = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
-                    ReadOnly = true,
-                    Visible = false,
-                    Width = 88
-                });
-                dgvUserAppraisal.Columns.AddRange(dataGridViewTextBoxColumns.ToArray());
+                    DataGridViewTextBoxColumn column1 = new DataGridViewTextBoxColumn
+                    {
+                        HeaderText = appraisalCoefficient.AppraisalType,
+                        Name = "AppraisalType" + appraisalCoefficient.Id.ToString(),
+                        DataPropertyName = "AppraisalType" + appraisalCoefficient.Id.ToString(),
+                        ReadOnly = true,
+                        Width = 88
+                    };
+
+                    DataGridViewTextBoxColumn column2 = new DataGridViewTextBoxColumn
+                    {
+                        HeaderText = "系数",
+                        Name = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
+                        DataPropertyName = "AppraisalCoefficient" + appraisalCoefficient.Id.ToString(),
+                        ReadOnly = true,
+                        Visible = false,
+                        Width = 88
+                    };
+
+                    DataGridViewTextBoxColumn column3 = new DataGridViewTextBoxColumn
+                    {
+                        HeaderText = "计算方式",
+                        Name = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
+                        DataPropertyName = "CalculationMethod" + appraisalCoefficient.Id.ToString(),
+                        ReadOnly = true,
+                        Visible = false,
+                        Width = 88
+                    };
+
+                    dgvUserAppraisal.Columns.Add(column1);
+                    dgvUserAppraisal.Columns.Add(column2);
+                    dgvUserAppraisal.Columns.Add(column3);
+                }
+
                 dgvUserAppraisal.Columns.Add(new DataGridViewTextBoxColumn
                 {
                     HeaderText = "考核年度",
@@ -92,6 +98,7 @@ namespace Appraisal_System
                     ReadOnly = true,
                     Width = 166
                 });
+
                 dgvUserAppraisal.Columns.Add(new DataGridViewTextBoxColumn
                 {
                     HeaderText = "实发年终奖",
@@ -103,4 +110,3 @@ namespace Appraisal_System
             }
         }
     }
-}

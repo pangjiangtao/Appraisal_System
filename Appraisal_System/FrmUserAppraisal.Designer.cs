@@ -61,7 +61,7 @@
             this.cbxYear.Name = "cbxYear";
             this.cbxYear.Size = new System.Drawing.Size(121, 26);
             this.cbxYear.TabIndex = 1;
-            this.cbxYear.Text = "2018";
+            this.cbxYear.Text = "2023";
             // 
             // label1
             // 

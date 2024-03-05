@@ -30,7 +30,6 @@ E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmBaseManager.r
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmMain.resources
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmNone.resources
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmSetUser.resources
-E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmUserAppraisal.resources
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.FrmUserManager.resources
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.Properties.Resources.resources
 E:\Appraisal_System\Appraisal_System\obj\Debug\Appraisal_System.csproj.GenerateResource.cache

@@ -48,14 +48,14 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.trvMenu);
-            this.splitContainer1.Size = new System.Drawing.Size(1119, 657);
-            this.splitContainer1.SplitterDistance = 373;
+            this.splitContainer1.Size = new System.Drawing.Size(937, 547);
+            this.splitContainer1.SplitterDistance = 221;
             this.splitContainer1.TabIndex = 0;
             // 
             // trvMenu
             // 
             this.trvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trvMenu.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.trvMenu.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.trvMenu.FullRowSelect = true;
             this.trvMenu.ItemHeight = 40;
             this.trvMenu.Location = new System.Drawing.Point(0, 0);
@@ -77,15 +77,15 @@
             treeNode3,
             treeNode4});
             this.trvMenu.ShowLines = false;
-            this.trvMenu.Size = new System.Drawing.Size(373, 657);
+            this.trvMenu.Size = new System.Drawing.Size(221, 547);
             this.trvMenu.TabIndex = 0;
             this.trvMenu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvMenu_AfterSelect);
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 657);
+            this.ClientSize = new System.Drawing.Size(937, 547);
             this.Controls.Add(this.splitContainer1);
             this.IsMdiContainer = true;
             this.Name = "FrmMain";

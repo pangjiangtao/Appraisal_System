@@ -4,3 +4,9 @@ E:\helloC#\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.csproj.As
 E:\helloC#\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.csproj.CoreCompileInputs.cache
 E:\helloC#\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.dll
 E:\helloC#\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.pdb
+E:\Appraisal_System\Appraisal_System.Utility\bin\Debug\Appraisal_System.Utility.dll
+E:\Appraisal_System\Appraisal_System.Utility\bin\Debug\Appraisal_System.Utility.pdb
+E:\Appraisal_System\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.csproj.AssemblyReference.cache
+E:\Appraisal_System\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.csproj.CoreCompileInputs.cache
+E:\Appraisal_System\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.dll
+E:\Appraisal_System\Appraisal_System.Utility\obj\Debug\Appraisal_System.Utility.pdb

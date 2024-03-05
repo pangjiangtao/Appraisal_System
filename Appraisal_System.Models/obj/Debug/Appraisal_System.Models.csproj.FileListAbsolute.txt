@@ -7,3 +7,12 @@ E:\helloC#\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.csproj.Core
 E:\helloC#\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.csproj.CopyComplete
 E:\helloC#\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.dll
 E:\helloC#\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.pdb
+E:\Appraisal_System\Appraisal_System.Models\bin\Debug\Appraisal_System.Models.dll
+E:\Appraisal_System\Appraisal_System.Models\bin\Debug\Appraisal_System.Models.pdb
+E:\Appraisal_System\Appraisal_System.Models\bin\Debug\Appraisal_System.Utility.dll
+E:\Appraisal_System\Appraisal_System.Models\bin\Debug\Appraisal_System.Utility.pdb
+E:\Appraisal_System\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.csproj.AssemblyReference.cache
+E:\Appraisal_System\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.csproj.CoreCompileInputs.cache
+E:\Appraisal_System\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.csproj.CopyComplete
+E:\Appraisal_System\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.dll
+E:\Appraisal_System\Appraisal_System.Models\obj\Debug\Appraisal_System.Models.pdb

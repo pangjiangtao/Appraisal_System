@@ -149,5 +149,35 @@ namespace Appraisal_System
                 Width = 166
             });
         }
+
+        private void dgvUserAppraisal_MouseDown(object sender, MouseEventArgs e)
+        {
+            tsmEdit.Visible = false;
+        }
+
+        private void dgvUserAppraisal_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (e.RowIndex>-1)
+                {
+                    dgvUserAppraisal.ClearSelection();
+                    dgvUserAppraisal.Rows[e.RowIndex].Selected = true;
+                    tsmEdit.Visible = true;
+
+                }
+            }
+
+        }
+
+        private void tsmEdit_Click(object sender, EventArgs e)
+        {
+            string year = cbxYear.Text;
+            int userId = (int)dgvUserAppraisal.SelectedRows[0].Cells["Id"].Value;
+            FrmUserAppraisalEdit frmUserAppraisalEdit = new FrmUserAppraisalEdit(userId,year);
+            frmUserAppraisalEdit.ShowDialog();
+            
+           
+        }
     }
 }

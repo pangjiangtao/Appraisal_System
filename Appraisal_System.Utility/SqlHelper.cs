@@ -26,7 +26,7 @@ namespace Appraisal_System.Utility
         }
 
         
-        public static int ExecuteNonQuers(string cmdText,params SqlParameter[] sqlParameters)
+        public static int ExecuteNonQuery(string cmdText,params SqlParameter[] sqlParameters)
         {
             using (SqlConnection conn = new SqlConnection(ConStr))
             {

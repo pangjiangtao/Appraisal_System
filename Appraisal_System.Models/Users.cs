@@ -35,7 +35,7 @@ namespace Appraisal_System.Models
         {
             //@+传参是SQL server特有的
             //"INSERT SET Users(UserName,PassWord,Sex,BaseTypeId,IsDel) VALUES(@UserName,@PassWord,@Sex,@BaseTypeId,@IsDel)",
-            return SqlHelper.ExecuteNonQuers($"INSERT INTO Users(UserName,PassWord,Sex,BaseTypeId,IsDel) VALUES" +
+            return SqlHelper.ExecuteNonQuery($"INSERT INTO Users(UserName,PassWord,Sex,BaseTypeId,IsDel) VALUES" +
                  "(@UserName,@PassWord,@Sex,@BaseTypeId,@IsDel)",
                  new SqlParameter("@UserName",user.UserName),
                  new SqlParameter("@PassWord",user.PassWord),
@@ -46,7 +46,7 @@ namespace Appraisal_System.Models
         } 
         public static int Update(Users user)
         { 
-            int rows =  SqlHelper.ExecuteNonQuers("UPDATE Users SET " +
+            int rows =  SqlHelper.ExecuteNonQuery("UPDATE Users SET " +
                 "PassWord = @PassWord,BaseTypeId= @BaseTypeId,UserName = @UserName,Sex = @Sex,IsDel = @IsDel WHERE Id=@Id",
                  new SqlParameter("@Id",user.Id),
                  new SqlParameter("@PassWord",user.PassWord),

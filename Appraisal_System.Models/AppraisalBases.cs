@@ -24,7 +24,7 @@ namespace Appraisal_System.Models
         }
         public static int Update(AppraisalBases appraisalBases)
         {
-            int rows = SqlHelper.ExecuteNonQuers("UPDATE AppraisalBases SET " +
+            int rows = SqlHelper.ExecuteNonQuery("UPDATE AppraisalBases SET " +
                 "BaseType = @BaseType,AppraisalBase = @AppraisalBase,IsDel = @IsDel WHERE Id=@Id",
                  new SqlParameter("@Id", appraisalBases.Id),
                  new SqlParameter("@BaseType", appraisalBases.BaseType),

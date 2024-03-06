@@ -29,6 +29,33 @@ namespace Appraisal_System
         private void FrmUserAppraisalEdit_Load(object sender, EventArgs e)
         {
             CreateContorls();
+            BindeContorls();
+        }
+
+        private void BindeContorls()
+        {
+            List<UserAppraisals> userAppraisals = UserAppraisals.ListByUserIdAndYear(_userId, _year);
+            foreach (var ua in userAppraisals)
+            {
+                var flCtrs = flp.Controls;
+                foreach (Control flCtr in flCtrs)
+                {
+                    if (flCtr is Panel)
+                    {
+                        var plCtrs = flCtr.Controls;
+                        foreach (var plCtr in plCtrs)
+                        {
+                            if (plCtr is TextBox)
+                            {
+                                int acId = Convert.ToInt32(((TextBox)plCtr).Name.Split('_')[1]);
+                                ((TextBox)plCtr).Text =
+                                    userAppraisals.Find(m => m.CoefficientId == acId).Count.ToString();
+                            }
+                        }
+
+                    }
+                }
+            }
         }
 
         private void CreateContorls()
@@ -36,7 +63,7 @@ namespace Appraisal_System
             List<AppraisalCoefficients> appraisalCoefficients = AppraisalCoefficients.ListAll();
             foreach (var ac in appraisalCoefficients)
             {
-                //Panel panel = new Panel();
+                Panel panel = new Panel();
                 Label label = new Label
                 {
                     Text = ac.AppraisalType,
@@ -48,11 +75,12 @@ namespace Appraisal_System
                 {
                     Location = new Point(66, 0),
                     Width = 120,
-                    Height = 26
+                    Height = 26,
+                    Name = "txtAppraisalType_" + ac.Id
                 };
-                flp.Controls.Add(label);
-                flp.Controls.Add(textBox);
-                //flp.Controls.Add(panel);
+                panel.Controls.Add(label);
+                panel.Controls.Add(textBox);
+                flp.Controls.Add(panel);
             }
         }
     }

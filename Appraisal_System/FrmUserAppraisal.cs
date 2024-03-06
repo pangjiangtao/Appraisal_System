@@ -12,10 +12,16 @@ namespace Appraisal_System
         {
             InitializeComponent();
         }
-
+        Action bindDgv;
         private void FrmUserAppraisal_Load(object sender, EventArgs e)
         {
             SetCol();
+            BindDgvUserAppraisal();
+            bindDgv = BindDgvUserAppraisal;
+        }
+
+        private void BindDgvUserAppraisal()
+        {
             //获取需要扩展的表
             DataTable dtUser = UserAppraisalBases.GetDtJoinAppraisal();
             //获取系数表集合
@@ -26,13 +32,13 @@ namespace Appraisal_System
                 //添加系数名
                 dtUser.Columns.Add(new DataColumn
                 {
-                    ColumnName = "AppraisalType"+item.Id
+                    ColumnName = "AppraisalType" + item.Id
                 });
                 //添加系数值
                 dtUser.Columns.Add(new DataColumn
                 {
                     ColumnName = "AppraisalCoefficient" + item.Id
-                });  
+                });
                 //添加计算方式
                 dtUser.Columns.Add(new DataColumn
                 {
@@ -44,7 +50,7 @@ namespace Appraisal_System
             dtUser.Columns.Add(new DataColumn
             {
                 ColumnName = "AssessmentYear"
-            }); 
+            });
             //添加实发年终奖
             dtUser.Columns.Add(new DataColumn
             {
@@ -55,8 +61,8 @@ namespace Appraisal_System
             List<UserAppraisalCoefficients> userAppraisalCoefficients = UserAppraisalCoefficients.ListAll();
             for (int i = 0; i < dtUser.Rows.Count; i++)
             {
-              var uacFilter =   userAppraisalCoefficients.FindAll(m => m.UserId == (int)dtUser.Rows[i]["Id"] && m.AssessmentYear ==
-                Convert.ToInt32(cbxYear.Text));
+                var uacFilter = userAppraisalCoefficients.FindAll(m => m.UserId == (int)dtUser.Rows[i]["Id"] && m.AssessmentYear ==
+                  Convert.ToInt32(cbxYear.Text));
                 //系数计算的数组，用于存放每个考核类型的总系数
                 double[] yearBonusArray = new double[uacFilter.Count];
                 for (int j = 0; j < uacFilter.Count; j++)
@@ -86,7 +92,7 @@ namespace Appraisal_System
                 double yearBonusAll = 0;
                 for (int j = 0; j < yearBonusArray.Length; j++)
                 {
-                    yearBonusAll += yearBonusArray[j];   
+                    yearBonusAll += yearBonusArray[j];
                 }
                 //计算实发年终奖
                 double yearBonus = (1 + yearBonusAll) * Convert.ToDouble(dtUser.Rows[i]["AppraisalBase"]);
@@ -174,7 +180,7 @@ namespace Appraisal_System
         {
             string year = cbxYear.Text;
             int userId = (int)dgvUserAppraisal.SelectedRows[0].Cells["Id"].Value;
-            FrmUserAppraisalEdit frmUserAppraisalEdit = new FrmUserAppraisalEdit(userId,year);
+            FrmUserAppraisalEdit frmUserAppraisalEdit = new FrmUserAppraisalEdit(userId,year,bindDgv);
             frmUserAppraisalEdit.ShowDialog();
             
            

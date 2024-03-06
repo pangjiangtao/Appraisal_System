@@ -36,7 +36,7 @@ namespace Appraisal_System.Utility
                 int rows = cmd.ExecuteNonQuery();
                 if (rows <= 0)
                 {
-                    throw new Exception("数据库操作失败");
+                    //throw new Exception("数据库操作失败");
                 }
                 return rows;
             }
